@@ -4,6 +4,30 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
 
+export const getStaticProps = async function () {
+  const files = fs.readdirSync(path.join("posts"));
+
+  const posts = files.map((filename) => {
+    const markdownWithMeta = fs.readFileSync(
+      path.join("posts", filename),
+      "utf-8"
+    );
+
+    const { data: frontMatter } = matter(markdownWithMeta);
+
+    return {
+      frontMatter,
+      slug: filename.split(".")[0],
+    };
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
+};
+
 export default function Home({ posts }) {
   return (
     <div className="mt-5">
@@ -39,27 +63,3 @@ export default function Home({ posts }) {
     </div>
   );
 }
-
-export const getStaticProps = async function () {
-  const files = fs.readdirSync(path.join("posts"));
-
-  const posts = files.map((filename) => {
-    const markdownWithMeta = fs.readFileSync(
-      path.join("posts", filename),
-      "utf-8"
-    );
-
-    const { data: frontMatter } = matter(markdownWithMeta);
-
-    return {
-      frontMatter,
-      slug: filename.split(".")[0],
-    };
-  });
-
-  return {
-    props: {
-      posts,
-    },
-  };
-};
