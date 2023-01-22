@@ -1,0 +1,11 @@
+---
+const { text, href, current, ...rest } = Astro.props;
+---
+
+<a
+  href={href}
+  {...rest}
+  class={current &&
+    "text-neutral-400 no-underline cursor-default pointer-events-none"}
+  >{text}</a
+>
