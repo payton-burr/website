@@ -1,14 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Nav from "../ui/Nav.astro";
+import Link from "../ui/Link.astro";
 ---
 
 <Layout title="About">
   <h1 class="mb-8">Payton Burr</h1>
-  <div class="flex items-center justify-end gap-3 mb-8">
-    <a href="/">About</a>
-    <a href="/posts/">Posts</a>
-    <a href="https://github.com/payton-burr" target="_blank">Github</a>
-  </div>
+  <Nav class="flex items-center justify-end gap-3 mb-8">
+    <Link current href="/" text="About" />
+    <Link href="/posts" text="Posts" />
+    <Link href="https://github.com/payton-burr" target="_blank" text="Github" />
+  </Nav>
   <div>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ab
