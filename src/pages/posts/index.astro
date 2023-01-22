@@ -1,0 +1,31 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../ui/Nav.astro";
+import Link from "../../ui/Link.astro";
+---
+
+<Layout title="Posts">
+  <h1 class="mb-8">Posts</h1>
+  <Nav class="flex items-center justify-end gap-3 mb-8">
+    <Link href="/" text="About" />
+    <Link current href="/posts" text="Posts" />
+    <Link href="https://github.com/payton-burr" target="_blank" text="Github" />
+  </Nav>
+  <ul class="p-0">
+    <div>
+      <h3><a class="no-underline" href="#">Markdown Examples</a></h3>
+      <p>View examples of all Markdown options. <a href="#">Read More →</a></p>
+      <time>Thu Jan 19 2023</time>
+    </div>
+    <div>
+      <h3>Markdown Examples</h3>
+      <p>View examples of all Markdown options. <a href="#">Read More →</a></p>
+      <time>Thu Jan 18 2023</time>
+    </div>
+    <div>
+      <h3>Markdown Examples</h3>
+      <p>View examples of all Markdown options. <a href="#">Read More →</a></p>
+      <time>Thu Jan 17 2023</time>
+    </div>
+  </ul>
+</Layout>
