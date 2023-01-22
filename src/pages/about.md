@@ -22,6 +22,29 @@ maiores non excepturi necessitatibus quae, earum atque, hic quaerat
 doloribus recusandae aspernatur expedita voluptate sed! Impedit dolore
 repellendus voluptas excepturi distinctio eligendi obcaecati.
 
-```js
-console.log("Hello World");
+- This is my point
+
+Take this code for example:
+
+```astro title:"
+---
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-slate-50 dark:bg-zinc-900">
+    <article class="container mx-auto pt-20 prose dark:prose-invert">
+      <slot />
+    </article>
+  </body>
+</html>
 ```
+
+This means that...
