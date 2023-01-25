@@ -1,0 +1,10 @@
+---
+const { text, href, ...rest } = Astro.props;
+---
+
+<a
+  href={href}
+  {...rest}
+  class="no-underline text-inherit bg-slate-700 px-2 rounded-md text-sm"
+  >{text}</a
+>
