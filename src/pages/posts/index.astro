@@ -13,13 +13,22 @@ import Link from "../../ui/Link.astro";
   </Nav>
   <ul class="p-0">
     <div>
-      <h3><a class="no-underline" href="#">Markdown Examples</a></h3>
-      <p>View examples of all Markdown options. <a href="#">Read More →</a></p>
+      <h3><Link post text="Markdown Examples" href="/posts/post-1/" /></h3>
+      <p>
+        View examples of all Markdown options. <Link
+          text="Read More →"
+          href="/posts/post-1/"
+        />
+      </p>
       <time>Thu Jan 19 2023</time>
     </div>
     <div>
       <h3>Markdown Examples</h3>
-      <p>View examples of all Markdown options. <a href="#">Read More →</a></p>
+      <p>
+        View examples of all Markdown options. <a href="./post-1.md/"
+          >Read More →</a
+        >
+      </p>
       <time>Thu Jan 18 2023</time>
     </div>
     <div>
