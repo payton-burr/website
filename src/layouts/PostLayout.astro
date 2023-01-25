@@ -1,0 +1,23 @@
+---
+import Layout from "./Layout.astro";
+import Nav from "../ui/Nav.astro";
+import Link from "../ui/Link.astro";
+import Tag from "../ui/Tag.astro";
+
+import { formatDate } from "../utils/formatDate";
+
+const { title, date, slug, description, tag, share } = Astro.props.frontmatter;
+---
+
+<Layout {title}>
+  <h1 class="mb-8">{title}</h1>
+  <Nav class="flex items-center justify-end gap-3 mb-8">
+    <div class="mr-auto">
+      <time>{formatDate(date)}</time>
+      •
+      <Tag href={`/tags/${tag}`} text={tag[0]} />
+    </div>
+    <Link href="/posts/" text="Back" />
+  </Nav>
+  <slot />
+</Layout>
