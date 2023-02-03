@@ -15,7 +15,7 @@ const { title, date, slug, description, tag, share } = Astro.props.frontmatter;
     <div class="mr-auto">
       <time>{formatDate(date)}</time>
       •
-      <Tag href={`/tags/${tag}`} text={tag[0]} />
+      <Tag href={`/tags/${tag}/`} text={tag[0]} />
     </div>
     <Link href="/posts/" text="Back" />
   </Nav>
