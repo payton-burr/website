@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../ui/Nav.astro";
 import Link from "../../ui/Link.astro";
+import PostCard from "../../ui/PostCard.astro";
 ---
 
 <Layout title="Posts">
@@ -11,30 +12,9 @@ import Link from "../../ui/Link.astro";
     <Link current href="/posts" text="Posts" />
     <Link href="https://github.com/payton-burr" target="_blank" text="Github" />
   </Nav>
-  <ul class="p-0">
-    <div>
-      <h3><Link post text="Markdown Examples" href="/posts/post-1/" /></h3>
-      <p class="mb-2">
-        View examples of all Markdown options. <Link
-          text="Read More →"
-          href="/posts/post-1/"
-        />
-      </p>
-      <time>Thu Jan 19 2023</time>
-    </div>
-    <div>
-      <h3>Markdown Examples</h3>
-      <p>
-        View examples of all Markdown options. <a href="./post-1.md/"
-          >Read More →</a
-        >
-      </p>
-      <time>Thu Jan 18 2023</time>
-    </div>
-    <div>
-      <h3>Markdown Examples</h3>
-      <p>View examples of all Markdown options. <a href="#">Read More →</a></p>
-      <time>Thu Jan 17 2023</time>
-    </div>
-  </ul>
+  <div>
+    <PostCard />
+    <PostCard />
+    <PostCard />
+  </div>
 </Layout>
