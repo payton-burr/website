@@ -36,19 +36,20 @@ Autem distinctio voluptas nobis animi odit, rerum asperiores fugit aliquid accus
 Neque libero cum veniam obcaecati natus, inventore repellendus voluptatem. Dicta at, officiis ea culpa repellendus, blanditiis molestias deserunt est nisi, quia laboriosam? Esse eveniet vel ad porro! Quasi, deleniti corrupti?
 Blanditiis, voluptatum laborum? Ab, architecto vitae? Delectus quae quibusdam esse magni facere sequi quasi soluta dolor iste inventore id non ipsum saepe voluptas excepturi explicabo et, est quam at necessitatibus?
 Omnis reiciendis, eius obcaecati cupiditate quae aliquid! Commodi doloribus vitae facere, voluptas voluptatum assumenda recusandae repellat quisquam, dolore iste distinctio ducimus corrupti deserunt omnis laudantium magnam debitis optio qui quos!
-Ratione maxime quis repellat repellendus saepe ipsa consequatur magnam amet neque delectus deserunt in sunt minima laboriosam fugiat nisi eligendi adipisci velit magni voluptate natus, explicabo earum eveniet. Error, accusantium.
-Ab excepturi porro ea fugit reiciendis esse nulla quasi. Eligendi aperiam autem error laboriosam laborum alias excepturi a, quia fugit minima officiis enim? Repellendus, cupiditate! Perspiciatis esse placeat dolor reiciendis!
-Suscipit quod omnis non porro assumenda expedita, vero quidem eveniet aperiam ex dolor quos voluptas eius asperiores nulla hic illo, pariatur harum eligendi sit, voluptates corrupti nisi. Sequi, rerum praesentium.
-Sint non adipisci inventore pariatur ab sequi explicabo magni placeat amet sed, vitae iusto quis nihil dicta reprehenderit dolor eum corporis deserunt ducimus, tempore doloribus? Delectus, dolorem ea. Est, velit!
-Quisquam iure, molestias hic recusandae explicabo quos eveniet quidem placeat, tenetur totam qui ducimus rem praesentium nulla quod modi, cumque quasi voluptas assumenda ipsa fugiat pariatur eaque. Consequuntur, illum praesentium!
-Sit accusantium laboriosam hic vitae debitis nostrum ullam voluptatum odio molestiae, alias rerum autem sint nisi aliquam nam. Quos a voluptas recusandae soluta fugit ullam sed obcaecati est. Iure, necessitatibus.
-Deleniti delectus sit suscipit ipsa magni, vitae possimus veniam minus debitis illo ipsam soluta est doloremque dignissimos et quisquam eaque culpa omnis animi ipsum ducimus rerum assumenda tempora. Incidunt, eveniet!
-Porro similique voluptatibus nobis culpa dicta ab nesciunt incidunt dolore, enim laboriosam quae facilis et reprehenderit amet repellat quo voluptas temporibus officia inventore ex id eius quidem? Corrupti, quibusdam voluptate?
-Ex culpa facilis laborum maxime. Aperiam animi obcaecati dolorum impedit, laudantium quod iste nobis repudiandae tempore explicabo perspiciatis, dolores quidem eos quis magnam magni illo, culpa ipsam unde molestiae. Dicta?
-Et dolores velit vel temporibus, odio suscipit ex distinctio saepe accusantium! Unde qui, quasi, est quidem recusandae ducimus eaque illo laborum sapiente illum vitae nemo tenetur atque odio mollitia magni.
-Exercitationem qui culpa itaque error dicta, praesentium atque iure ea soluta architecto consequatur omnis nostrum aut eum reprehenderit facere pariatur officiis nihil adipisci dolore quis eius, aliquam cum. Accusamus, sunt?
-Sapiente iste neque obcaecati nobis doloremque unde quos aliquam sit temporibus ad labore nostrum distinctio, rerum ut magnam quae, possimus suscipit fugit magni debitis! Omnis nam unde eos. A, sequi.
-Quas minus consequatur explicabo incidunt exercitationem autem quis aliquid quod eos quibusdam consectetur, labore cum fuga est facilis eaque ipsa iste magnam repudiandae quaerat! Iusto mollitia commodi ut quis est.
-Error mollitia consequuntur sit fuga sapiente delectus id vitae, exercitationem dignissimos quae illum. Obcaecati molestiae impedit suscipit consequatur fuga eos quam, quos earum vero qui veritatis accusantium dicta omnis mollitia.
+Ratione maxime quis repellat repellendus saepe ipsa consequatur magnam amet neque delectus deserunt in sunt minima laboriosam fugiat nisi
 
 ---
+
+- Point 1
+- Point 2
+- Point 3
+
+```astro
+---
+import data from "../../utils/data.js";
+
+console.log(data);
+---
+
+<p>{data.map(item => ...)}</p>
+```
