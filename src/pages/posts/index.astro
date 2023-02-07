@@ -3,6 +3,8 @@ import Layout from "../../layouts/Layout.astro";
 import Nav from "../../ui/Nav.astro";
 import Link from "../../ui/Link.astro";
 import PostCard from "../../ui/PostCard.astro";
+
+const allPosts = await Astro.glob("./*.md");
 ---
 
 <Layout title="Posts">
@@ -13,8 +15,6 @@ import PostCard from "../../ui/PostCard.astro";
     <Link href="https://github.com/payton-burr" target="_blank" text="Github" />
   </Nav>
   <div>
-    <PostCard />
-    <PostCard />
-    <PostCard />
+    {allPosts.map((post) => <PostCard {post} />)}
   </div>
 </Layout>
