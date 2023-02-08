@@ -14,7 +14,11 @@ const allPosts = await Astro.glob("./*.md");
     <Link current href="/posts" text="Posts" />
     <Link href="https://github.com/payton-burr" target="_blank" text="Github" />
   </Nav>
-  <div>
-    {allPosts.map((post) => <PostCard {post} />)}
-  </div>
+  <section aria-label="New Blog Posts">
+    {
+      allPosts.map((post) => (
+        <PostCard frontmatter={post.frontmatter} url={post.url} />
+      ))
+    }
+  </section>
 </Layout>
