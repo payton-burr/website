@@ -29,8 +29,8 @@ const { name } = Astro.props;
 const allPosts = await Astro.glob("../posts/*.md");
 const formattedPosts = formatBlog(allPosts);
 
-const taggedPosts = formattedPosts.filter(
-  (post) => post.frontmatter.tags[0] === tags
+const taggedPosts = formattedPosts.filter((post) =>
+  post.frontmatter.tags.some((tag) => tag === tags)
 );
 ---
 
