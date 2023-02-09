@@ -6,7 +6,7 @@ import Tag from "../ui/Tag.astro";
 
 import { formatDate } from "../utils/formatDate";
 
-const { title, date, slug, description, tag, share } = Astro.props.frontmatter;
+const { title, date, tags } = Astro.props.frontmatter;
 ---
 
 <Layout {title}>
@@ -15,7 +15,7 @@ const { title, date, slug, description, tag, share } = Astro.props.frontmatter;
     <div class="mr-auto">
       <time>{formatDate(date)}</time>
       •
-      <Tag href={`/tags/${tag}/`} text={tag[0]} />
+      <Tag href={`/tags/${tags}/`} text={tags[0]} />
     </div>
     <Link href="/posts/" text="Back" />
   </Nav>
