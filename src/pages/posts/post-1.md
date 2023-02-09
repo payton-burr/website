@@ -4,7 +4,7 @@ title: A Post about Important Things Again and Again.
 date: 01/24/2023
 slug: my-first-post
 description: This post is about important things that you should know.
-tag: ["JavaScript"]
+tags: ["JavaScript"]
 share: false
 ---
 
