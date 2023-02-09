@@ -30,7 +30,7 @@ const allPosts = await Astro.glob("../posts/*.md");
 const formattedPosts = formatBlog(allPosts);
 
 const taggedPosts = formattedPosts.filter(
-  (post) => post.frontmatter.tag[0] === tags
+  (post) => post.frontmatter.tags[0] === tags
 );
 ---
 
