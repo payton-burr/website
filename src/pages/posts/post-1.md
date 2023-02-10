@@ -8,7 +8,7 @@ tags: ["JavaScript"]
 share: false
 ---
 
-## Hello world
+## Code
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugit quae omnis aliquam eum adipisci nobis perspiciatis odit iusto! Repudiandae perferendis animi cupiditate asperiores earum? Iure adipisci itaque beatae tempora.
 Magnam accusantium cupiditate aut id voluptatibus, autem placeat modi, saepe pariatur excepturi fuga provident itaque illo magni aperiam repellendus veritatis earum ducimus quam deserunt voluptas libero quis. Quisquam, eaque ratione.
