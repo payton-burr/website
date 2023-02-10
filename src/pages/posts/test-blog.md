@@ -1,3 +1,11 @@
+---
+layout: ../../layouts/PostLayout.astro
+title: Markdown Examples
+date: 02/10/2023
+description: These are some markdown examples
+tags: ["Example"]
+---
+
 # h1
 ## h2
 ### h3
