@@ -12,9 +12,9 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-zinc-50 dark:bg-zinc-900">
+  <body class="px-4 bg-zinc-50 dark:bg-zinc-900">
     <main
-      class="container mx-auto pt-20 pb-32 prose dark:prose-invert prose-code:text-[13px]"
+      class="container mx-auto pt-20 pb-32 prose prose-sm md:prose-base dark:prose-invert"
     >
       <slot />
       <Footer />
