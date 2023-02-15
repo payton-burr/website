@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: A Post about Important Things Again and Again.
-date: 01/24/2023
-description: This post is about important things that you should know.
+title: cs50 notes.
+date: 02/15/2023
+description: My notes on Harvard's cs50
 tags: ["Notes"]
 ---
 
