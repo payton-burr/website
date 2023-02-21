@@ -12,18 +12,27 @@ Binary is a base-2 numeral system expressed with a "0" or "1" with each digit re
 
 base-2 is similar to the decimal system we use normally which is base-10
 
-### Definitions
+## Definitions
 
-#### Base-10
+### ASCII
+
+American Standard Code Information Interchange is the most common character encoding format for text data, which consists 128 unique values and each value being represented by their equivalent number of bits.
+
+### Base-10
 
 | 10<sup>2</sup> | 10<sup>1</sup> | 10<sup>0</sup> |
 | -------------- | -------------- | -------------- |
 | 100            | 10             | 1              |
 | #              | #              | #              |
 
-#### Base-2
+### Base-2
 
 | 2<sup>2</sup> | 2<sup>1</sup> | 2<sup>0</sup> |
 | ------------- | ------------- | ------------- |
 | 4             | 2             | 1             |
 | #             | #             | #             |
+
+
+### Byte
+
+A byte consists of eight bits, with it's common multiples being kilobyte, megabyte, gigabyte, terabyte
