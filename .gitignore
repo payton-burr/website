@@ -21,3 +21,6 @@ pnpm-debug.log*
 
 # obsidian
 .obsidian
+
+# templates folder
+src/pages/posts/templates
