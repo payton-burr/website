@@ -18,6 +18,10 @@ base-2 is similar to the decimal system we use normally which is base-10
 
 American Standard Code Information Interchange is the most common character encoding format for text data, which consists 128 unique values and each value being represented by their equivalent number of bits.
 
+### Unicode
+
+Unicode standard is a character encoding format much like [ASCII](#ascii), but is more universally adopted to support encoding for other languages, emojis, and other forms of text data
+
 ### Base-10
 
 | 10<sup>2</sup> | 10<sup>1</sup> | 10<sup>0</sup> |
@@ -31,7 +35,6 @@ American Standard Code Information Interchange is the most common character enco
 | ------------- | ------------- | ------------- |
 | 4             | 2             | 1             |
 | #             | #             | #             |
-
 
 ### Byte
 
