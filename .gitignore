@@ -24,3 +24,6 @@ pnpm-debug.log*
 
 # templates folder
 src/pages/posts/templates
+
+# astro collections metadata
+.astro
