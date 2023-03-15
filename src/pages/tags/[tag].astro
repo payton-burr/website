@@ -6,17 +6,19 @@ import PostCard from "../../ui/PostCard.astro";
 
 import { formatBlog } from "../../utils/formatBlog";
 
+import { getCollection } from "astro:content";
+
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob("../posts/*.md");
+  const allPosts = await getCollection("blog");
   const formattedPosts = formatBlog(allPosts);
 
   const uniqueTags = [
-    ...new Set(formattedPosts.map((post) => post.frontmatter.tags).flat()),
+    ...new Set(formattedPosts.map((post) => post.data.tags).flat()),
   ];
 
   return uniqueTags.map((tag) => {
     const filteredPosts = formattedPosts.filter((post) =>
-      post.frontmatter.tags.includes(tag)
+      post.data.tags.includes(tag)
     );
 
     return {
@@ -38,10 +40,6 @@ const { posts } = Astro.props;
     <Link href="https://github.com/payton-burr" target="_blank" text="Github" />
   </Nav>
   <section aria-label={`${tag} Related Posts`}>
-    {
-      posts.map((post) => (
-        <PostCard frontmatter={post.frontmatter} url={post.url} />
-      ))
-    }
+    {posts.map((post) => <PostCard frontmatter={post.data} url={post.url} />)}
   </section>
 </Layout>
