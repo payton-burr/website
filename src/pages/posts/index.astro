@@ -6,7 +6,9 @@ import PostCard from "../../ui/PostCard.astro";
 
 import { formatBlog } from "../../utils/formatBlog";
 
-const allPosts = await Astro.glob("./*.md");
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
 const formattedPosts = formatBlog(allPosts);
 ---
 
@@ -20,7 +22,7 @@ const formattedPosts = formatBlog(allPosts);
   <section aria-label="New Blog Posts">
     {
       formattedPosts.map((post) => (
-        <PostCard frontmatter={post.frontmatter} url={post.url} />
+        <PostCard frontmatter={post.data} url={"/posts/" + post.slug} />
       ))
     }
   </section>
