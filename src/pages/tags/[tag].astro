@@ -40,6 +40,10 @@ const { posts } = Astro.props;
     <Link href="https://github.com/payton-burr" target="_blank" text="Github" />
   </Nav>
   <section aria-label={`${tag} Related Posts`}>
-    {posts.map((post) => <PostCard frontmatter={post.data} url={post.url} />)}
+    {
+      posts.map((post) => (
+        <PostCard frontmatter={post.data} url={"/posts/" + post.slug} />
+      ))
+    }
   </section>
 </Layout>
