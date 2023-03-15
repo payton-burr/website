@@ -1,9 +1,9 @@
 ---
-layout: ../../layouts/PostLayout.astro
 title: cs50 notes.
-date: 02/15/2023
+date: 2023-02-15
 description: My notes on Harvard's cs50
 tags: ["Notes"]
+draft: false
 ---
 
 ## Binary
