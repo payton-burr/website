@@ -11,22 +11,58 @@ import Link from "../ui/Link.astro";
     <Link href="/posts" text="Posts" />
     <Link href="https://github.com/payton-burr" target="_blank" text="Github" />
   </Nav>
-  <div>
+  <main>
+    <p>Self-driven coding enthusiast.</p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ab
-      molestias
+      I started programming in highscool where I was first introduced into
+      <strong>database development</strong> and later <strong
+        >web development</strong
+      >, and went on to graduate from a <strong>full stack developer</strong> bootcamp
+      backed by University of Utah, which included a list of skills you can find
+      <Link
+        href="https://www.credly.com/badges/bdb7724a-20f0-4676-b53a-f496dffb3ade/linked_in_profile"
+        target="_blank"
+        text="here"
+      />
     </p>
+    <hr />
+    <h3>Links</h3>
+
+    <ul>
+      <li>
+        <Link
+          href="https://github.com/payton-burr"
+          target="_blank"
+          text="Github"
+        />
+      </li>
+      <li>
+        <Link
+          href="https://www.linkedin.com/in/payton-burr"
+          target="_blank"
+          text="Linkedin"
+        />
+      </li>
+      <li>
+        Email <Link
+          href="mailto:paytonburr@outlook.com"
+          target="_blank"
+          text="paytonburr@outlook.com"
+        />
+      </li>
+    </ul>
+
+    <h3>Info</h3>
     <p>
-      voluptates blanditiis eum impedit quasi sapiente ex illo officiis magni,
-      facilis reprehenderit odio temporibus nulla accusamus sequi provident
-      inventore.
+      This site was inspired by <Link
+        href="https://nextra.site"
+        target="_blank"
+        text="Nextra"
+      /> and was built with <Link
+        href="https://astro.build"
+        target="_blank"
+        text="Astro"
+      />
     </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vitae
-      praesentium eum nulla.
-    </p>
-    <p>
-      Accusantium cupiditate reprehenderit autem, quis, ea perferendis maxime
-    </p>
-  </div>
+  </main>
 </Layout>
