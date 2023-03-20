@@ -27,3 +27,8 @@ src/pages/posts/templates
 
 # astro collections metadata
 .astro
+
+# frontmatter
+.frontmatter
+frontmatter.json
+.vscode/settings.json
