@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Project 1",
+    "description": "project description",
+    "tags": [],
+    "links": {
+      "github": "#",
+      "preview": "#"
+    }
+  },
+  {
+    "title": "Project 2",
+    "description": "project description",
+    "tags": [],
+    "links": {
+      "github": "#",
+      "preview": "#"
+    }
+  },
+  {
+    "title": "Project 3",
+    "description": "project description",
+    "tags": [],
+    "links": {
+      "github": "#",
+      "preview": "#"
+    }
+  },
+  {
+    "title": "Project 4",
+    "description": "project description",
+    "tags": [],
+    "links": {
+      "github": "#",
+      "preview": "#"
+    }
+  }
+]
