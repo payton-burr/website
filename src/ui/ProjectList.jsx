@@ -7,14 +7,16 @@ function ProjectList() {
 
   return (
     <div>
-      <Filter
+      <h2>Coming Soon...</h2>
+      <p>Building some new projects</p>
+      {/* <Filter
         category={category}
         setCategory={setCategory}
         setFilteredProjects={setFilteredProjects}
       />
       {filteredProjects.map((project) => {
         return <div key={project.id}>{project.title}</div>;
-      })}
+      })} */}
     </div>
   );
 }
