@@ -12,11 +12,21 @@ function Filter({ category, setCategory, setFilteredProjects }) {
       setFilteredProjects(filter);
     }
   }, [category]);
+
+  const uniqueCategories = [
+    ...new Set(projects.map((project) => project.tags).flat()),
+  ];
+
+  console.log(uniqueCategories);
+
   return (
     <div>
       <button onClick={() => setCategory("all")}>All</button>
-      <button onClick={() => setCategory("javascript")}>JavaScript</button>
-      <button onClick={() => setCategory("react")}>React</button>
+      {uniqueCategories.map((category) => (
+        <button key={category} onClick={() => setCategory(category)}>
+          {category}
+        </button>
+      ))}
     </div>
   );
 }
