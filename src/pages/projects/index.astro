@@ -2,6 +2,8 @@
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../ui/Nav.astro";
 import Link from "../../ui/Link.astro";
+
+import ProjectList from "../../ui/ProjectList";
 ---
 
 <Layout title="Projects">
@@ -11,5 +13,5 @@ import Link from "../../ui/Link.astro";
     <Link current href="/projects" text="Projects" />
     <Link href="/posts" text="Posts" />
   </Nav>
-  <main></main>
+  <ProjectList client:load />
 </Layout>
