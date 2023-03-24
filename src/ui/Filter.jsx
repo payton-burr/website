@@ -18,8 +18,6 @@ function Filter({ category, setCategory, setFilteredProjects }) {
     ...new Set(projects.map((project) => project.tags).flat()),
   ];
 
-  console.log(uniqueCategories);
-
   return (
     <div>
       <Button onClick={() => setCategory("all")}>All</Button>
