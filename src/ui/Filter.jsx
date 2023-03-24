@@ -1,3 +1,4 @@
+import Button from "./Button";
 import { useEffect } from "react";
 import projects from "../fixtures/projects.json";
 
@@ -21,11 +22,11 @@ function Filter({ category, setCategory, setFilteredProjects }) {
 
   return (
     <div>
-      <button onClick={() => setCategory("all")}>All</button>
+      <Button onClick={() => setCategory("all")}>All</Button>
       {uniqueCategories.map((category) => (
-        <button key={category} onClick={() => setCategory(category)}>
+        <Button key={category} onClick={() => setCategory(category)}>
           {category}
-        </button>
+        </Button>
       ))}
     </div>
   );
