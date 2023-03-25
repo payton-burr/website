@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Filter from "./Filter";
+import Project from "./Project";
 
 function ProjectList() {
   const [category, setCategory] = useState("all");
@@ -14,9 +15,11 @@ function ProjectList() {
         setCategory={setCategory}
         setFilteredProjects={setFilteredProjects}
       />
-      {filteredProjects.map((project) => {
-        return <div key={project.id}>{project.title}</div>;
-      })} */}
+      <div className="flex justify-start flex-wrap">
+        {filteredProjects.map((project) => {
+          return <Project key={project.id}>{project.title}</Project>;
+        })}
+      </div> */}
     </div>
   );
 }
