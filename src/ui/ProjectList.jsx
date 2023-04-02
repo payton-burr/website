@@ -8,14 +8,14 @@ function ProjectList() {
 
   return (
     <div>
-      {/* <h2>Coming Soon...</h2>
-      <p>Building some new projects</p> */}
-      <Filter
+      <h2>Coming Soon...</h2>
+      <p>Building some new projects</p>
+      {/* <Filter
         category={category}
         setCategory={setCategory}
         setFilteredProjects={setFilteredProjects}
       />
-      <div>
+      <div className="flex flex-wrap justify-center">
         {filteredProjects.map((project) => {
           return (
             <Project key={project.id}>
@@ -38,7 +38,7 @@ function ProjectList() {
             </Project>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 }
