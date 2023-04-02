@@ -8,9 +8,9 @@ function ProjectList() {
 
   return (
     <div>
-      <h2>Coming Soon...</h2>
-      <p>Building some new projects</p>
-      {/* <Filter
+      {/* <h2>Coming Soon...</h2>
+      <p>Building some new projects</p> */}
+      <Filter
         category={category}
         setCategory={setCategory}
         setFilteredProjects={setFilteredProjects}
@@ -25,7 +25,7 @@ function ProjectList() {
                 className="inline w-full rounded md:w-36 md:mr-4"
               />
               <div className="content">
-                <p className="text-xl my-5 leading-3">
+                <p className="text-xl my-5 leading-5">
                   An Above Average Experience
                 </p>
                 <p className="text-sm my-3">
@@ -38,7 +38,7 @@ function ProjectList() {
             </Project>
           );
         })}
-      </div> */}
+      </div>
     </div>
   );
 }
