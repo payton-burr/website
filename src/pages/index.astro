@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../ui/Nav.astro";
 import Link from "../ui/Link.astro";
+import ThemeToggle from "../ui/ThemeToggle";
 ---
 
 <Layout title="About">
   <h1 class="mb-8">Payton Burr</h1>
   <Nav class="flex items-center justify-end gap-3 mb-8">
+    <ThemeToggle client:only="react" />
     <Link current href="/" text="About" />
     <Link href="/projects" text="Projects" />
     <Link href="/posts" text="Posts" />
