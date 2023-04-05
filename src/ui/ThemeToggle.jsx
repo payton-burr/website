@@ -17,7 +17,7 @@ function ThemeToggle() {
   }, [theme]);
 
   return (
-    <button onClick={handleClick} className="mr-auto">
+    <button onClick={handleClick} className="py-2 pr-3 mr-auto">
       <svg
         className="w-3 h-3"
         fill="currentColor"
