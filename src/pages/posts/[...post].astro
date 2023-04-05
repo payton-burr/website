@@ -4,6 +4,9 @@ import Nav from "../../ui/Nav.astro";
 import Link from "../../ui/Link.astro";
 import Tag from "../../ui/Tag.astro";
 
+// react component
+import ThemeToggle from "../../ui/ThemeToggle";
+
 import { formatDate } from "../../utils/formatDate";
 
 import { getCollection } from "astro:content";
@@ -26,6 +29,7 @@ const { Content } = await post.render();
   <h1 class="mb-8">{post.data.title}</h1>
   <Nav class="flex items-center justify-end gap-3 mb-8">
     <div class="mr-auto">
+      <ThemeToggle client:only="react" />
       <time>{formatDate(post.data.date)}</time>
       •
       {post.data.tags.map((tag) => <Tag href={`/tags/${tag}`} text={tag} />)}

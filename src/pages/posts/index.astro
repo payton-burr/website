@@ -4,6 +4,9 @@ import Nav from "../../ui/Nav.astro";
 import Link from "../../ui/Link.astro";
 import PostCard from "../../ui/PostCard.astro";
 
+// react component
+import ThemeToggle from "../../ui/ThemeToggle";
+
 import { formatBlog } from "../../utils/formatBlog";
 
 import { getCollection } from "astro:content";
@@ -15,6 +18,7 @@ const formattedPosts = formatBlog(allPosts);
 <Layout title="Posts">
   <h1 class="mb-8">Posts</h1>
   <Nav class="flex items-center justify-end gap-3 mb-8">
+    <ThemeToggle client:only="react" />
     <Link href="/" text="About" />
     <Link href="/projects" text="Projects" />
     <Link current href="/posts" text="Posts" />

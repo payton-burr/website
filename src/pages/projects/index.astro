@@ -3,12 +3,15 @@ import Layout from "../../layouts/Layout.astro";
 import Nav from "../../ui/Nav.astro";
 import Link from "../../ui/Link.astro";
 
+// react component
 import ProjectList from "../../ui/ProjectList";
+import ThemeToggle from "../../ui/ThemeToggle";
 ---
 
 <Layout title="Projects">
   <h1 class="mb-8">Projects</h1>
   <Nav class="flex items-center justify-end gap-3 mb-8">
+    <ThemeToggle client:only="react" />
     <Link href="/" text="About" />
     <Link current href="/projects" text="Projects" />
     <Link href="/posts" text="Posts" />
