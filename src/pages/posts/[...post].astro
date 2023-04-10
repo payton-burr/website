@@ -38,3 +38,14 @@ const { Content } = await post.render();
   </Nav>
   <Content />
 </Layout>
+
+<style is:inline>
+  object {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  html.dark object {
+    filter: invert(93%) hue-rotate(180deg);
+  }
+</style>
