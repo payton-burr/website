@@ -21,8 +21,12 @@ The most common character encoding format for text data, which consists 128 uniq
 
 ### Unicode
 
-A character encoding format much like [ASCII](#ascii), but is more universally adopted to support encoding for other languages, emojis, and other forms of text data
+A character encoding format much like [ASCII](#ascii-american-standard-code-information-interchange), but is more universally adopted to support encoding for other languages, emojis, and other forms of text data
 
 ### Byte
 
 A byte consists of eight bits, with it's common multiples being kilobyte, megabyte, gigabyte, terabyte
+
+### BigO
+
+<object data="/assets/graph.svg"></object>
