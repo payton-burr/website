@@ -9,7 +9,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   markdown: {
     shikiConfig: {
-      theme: "dark-plus",
+      theme: "css-variables",
     },
   },
   integrations: [tailwind(), react()],
