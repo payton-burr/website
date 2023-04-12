@@ -7,13 +7,16 @@ tags:
 draft: false
 ---
 
-## Definitions
+## Table of contents
+
+1. [Binary](#binary)
+2. [Algorithms](#algorithms)
 
 ### Binary
 
-A base-2 numeral system expressed with a "0" or "1" with each digit representing a bit (binary digit)
+Computers only work in binary, this means it compiles down to only two digits, 0 and 1. Decimals however, has 10 digits 0-9 which is more familiar to humans.
 
-base-2 is similar to the decimal system we use normally which is base-10
+In decimal, `123` is one hundred and twenty three,
 
 ### ASCII (American Standard Code Information Interchange)
 
@@ -27,6 +30,12 @@ A character encoding format much like [ASCII](#ascii-american-standard-code-info
 
 A byte consists of eight bits, with it's common multiples being kilobyte, megabyte, gigabyte, terabyte
 
-### BigO
+---
+
+## Algorithms
+
+The simplest definition of an algorithm is a set of step-by-step instructions for solving a problem:
+
+<object data="/assets/algorithm.svg"></object>
 
 <object data="/assets/graph.svg"></object>
