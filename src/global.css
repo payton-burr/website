@@ -1,6 +1,6 @@
 :root {
   --astro-code-color-text: #000000;
-  --astro-code-color-background: rgba(21, 24, 215, 0.05);
+  --astro-code-color-background: rgba(0, 0, 150, 0.05);
   --astro-code-token-constant: #0070c1;
   --astro-code-token-string: #a31515;
   --astro-code-token-comment: #008000;
