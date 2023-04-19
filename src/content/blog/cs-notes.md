@@ -79,4 +79,8 @@ An algorithm is a set of step-by-step instructions for solving a problem, taking
 
 <object data="/assets/algorithm.svg"></object>
 
+### Abstraction
+
+A way of generalizing something to focus more on the high level goal instead of the low level implementation details
+
 <object data="/assets/graph.svg"></object>
