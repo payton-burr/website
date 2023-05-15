@@ -16,26 +16,9 @@ draft: false
 5. [Libraries](#libraries)
 6. [Cons](#cons)
 
-### Source code
+## Concepts
 
-List of commands that a person writes (languages)
-
-### Machine code
-
-List of commands a computer can understand from compiled [Source code](#source-code)
-
-<object data="/assets/compiler.svg"></object>
-
-```c
-#include <stdio.h>
-
-int main(void)
-
-{
-	printf("hello, world\n");
-}
-```
-
+## 
 ### Types
 
 - bool
@@ -54,13 +37,16 @@ int main(void)
 - %li
 - %s
 
-### Libraries
+### Example code
 
 ```c
-#include <stdio.h>
-```
+#include <stdio.h> // Library (header file)
 
-Libraries are typically referred to as "header files", are declarations that tell your program to use a certain function. Historically, this is because computers were slower and resource constrained.
+int main(void) // (return type) function(param type)
+{
+	printf("hello, world\n");
+}
+```
 
 ### Conditionals
 
@@ -95,10 +81,3 @@ int main(void)
 ➜  c ./calculator
 -294967296
 ```
-
-- #### Integer Overflow
-
-  Computers typically uses 32 bits to represent an integer, with the maximum number that can be represented around 4 billion. But in cases where we need to use negative numbers, computers allocate half of the resources to negative numbers. This means that even though you're using 32 bits, the computer can only count as high as 2 billion.
-
-- #### Truncation
-  Occurs when doing math with floating point values (numbers with decimals), where you accidentally truncate the value.
