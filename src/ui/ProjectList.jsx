@@ -8,37 +8,31 @@ function ProjectList() {
 
   return (
     <div>
-      <h2>Coming Soon...</h2>
-      <p>Building some new projects</p>
-      {/* <Filter
+      <Filter
         category={category}
         setCategory={setCategory}
         setFilteredProjects={setFilteredProjects}
       />
       <div className="flex flex-wrap justify-center">
-        {filteredProjects.map((project) => {
+        {filteredProjects.map(({ title, description, id, links }) => {
           return (
-            <Project key={project.id}>
+            <Project key={id}>
               <img
                 src="/mountain.jpg"
                 alt=""
                 className="inline w-full rounded md:w-36 md:mr-4"
               />
               <div className="content">
-                <p className="text-xl my-5 leading-5">
-                  An Above Average Experience
-                </p>
-                <p className="text-sm my-3">
-                  Travel to the premiere mountain tops of New Zealand with our
-                  guided tours. Take in the majestic scenary and witness beauty.
-                </p>
-                {project.links.github}
-                {project.links.preview}
+                <p className="text-xl my-5 leading-5">{title}</p>
+                <p className="text-sm my-3">{description}</p>
+                <div>
+                  {links.github} {links.preview}
+                </div>
               </div>
             </Project>
           );
         })}
-      </div> */}
+      </div>
     </div>
   );
 }
