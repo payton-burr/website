@@ -1,42 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Project 1",
-    "description": "project description",
+    "title": "Coming soon",
+    "description": "Building new projects...",
     "tags": [],
     "links": {
-      "github": "#",
-      "preview": "#"
-    }
-  },
-  {
-    "id": 2,
-    "title": "Project 2",
-    "description": "project description",
-    "tags": [],
-    "links": {
-      "github": "#",
-      "preview": "#"
-    }
-  },
-  {
-    "id": 3,
-    "title": "Project 3",
-    "description": "project description",
-    "tags": [],
-    "links": {
-      "github": "#",
-      "preview": "#"
-    }
-  },
-  {
-    "id": 4,
-    "title": "Project 4",
-    "description": "project description",
-    "tags": [],
-    "links": {
-      "github": "#",
-      "preview": "#"
+      "github": "Github",
+      "preview": "Preview"
     }
   }
 ]
