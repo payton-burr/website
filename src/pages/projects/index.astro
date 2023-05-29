@@ -2,9 +2,9 @@
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../ui/Nav.astro";
 import Link from "../../ui/Link.astro";
+import Projects from "../../ui/Projects.astro";
 
 // react component
-import ProjectList from "../../ui/ProjectList";
 import ThemeToggle from "../../ui/ThemeToggle";
 ---
 
@@ -16,5 +16,5 @@ import ThemeToggle from "../../ui/ThemeToggle";
     <Link current href="/projects" text="Projects" />
     <Link href="/posts" text="Posts" />
   </Nav>
-  <ProjectList client:load />
+  <Projects />
 </Layout>
