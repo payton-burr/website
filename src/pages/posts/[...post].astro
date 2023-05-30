@@ -8,31 +8,30 @@ import Tag from "../../ui/Tag.astro";
 import ThemeToggle from "../../ui/ThemeToggle";
 
 import { formatDate } from "../../utils/formatDate";
-
-import { getCollection } from "astro:content";
-
-export async function getStaticPaths() {
-  const blogsPosts = await getCollection("blog");
-
-  return blogsPosts.map((post) => ({
-    params: { post: post.slug },
-    props: { post },
-  }));
+import { getEntry } from "astro:content";
+const { post } = Astro.params;
+if (post === undefined) {
+  throw new Error("Post(slug) is required");
 }
 
-// const { title, date, tags } = Astro.props.frontmatter;
-const { post } = Astro.props;
-const { Content } = await post.render();
+const entry = await getEntry("blog", post);
+
+if (entry === undefined) {
+  return Astro.redirect("/404");
+}
+
+const { title, date, tags } = entry.data;
+const { Content } = await entry.render();
 ---
 
-<Layout title={post.data.title}>
-  <h1 class="mb-8">{post.data.title}</h1>
+<Layout title={"post.data.title"}>
+  <h1 class="mb-8">{title}</h1>
   <Nav class="flex items-center justify-end gap-3 mb-8">
     <div class="mr-auto">
       <ThemeToggle client:only="react" />
-      <time>{formatDate(post.data.date)}</time>
+      <time>{formatDate(date)}</time>
       •
-      {post.data.tags.map((tag) => <Tag href={`/tags/${tag}`} text={tag} />)}
+      {tags.map((tag) => <Tag href={`/tags/${tag}`} text={tag} />)}
     </div>
     <Link href="/posts/" text="Back" />
   </Nav>
