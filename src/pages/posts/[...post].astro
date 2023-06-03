@@ -22,6 +22,8 @@ if (entry === undefined) {
 
 const { title, date, tags } = entry.data;
 const { Content } = await entry.render();
+
+export const prerender = true;
 ---
 
 <Layout {title}>
