@@ -20,7 +20,6 @@ export async function getStaticPaths() {
   }));
 }
 
-// const { title, date, tags } = Astro.props.frontmatter;
 const { post } = Astro.props;
 const { Content } = await post.render();
 ---
