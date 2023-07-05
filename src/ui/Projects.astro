@@ -1,7 +1,8 @@
 ---
 import Project from "./Project";
+import { get } from "../pages/api/projects";
 
-const response = await fetch("http://localhost:3000/api/projects");
+const response = await get();
 const { data } = await response.json();
 const { user } = data;
 
