@@ -2,6 +2,8 @@
 import Project from "./Project";
 import { get } from "../pages/api/projects";
 
+export const prerender = false;
+
 const response = await get();
 const { data } = await response.json();
 const { user } = data;
