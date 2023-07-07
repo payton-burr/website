@@ -7,6 +7,14 @@ import Projects from "../../ui/Projects.astro";
 // react component
 import ThemeToggle from "../../ui/ThemeToggle";
 
+import { get } from "../api/projects";
+
+const response = await get();
+const { data } = await response.json();
+const { user } = data;
+
+const pinnedItems = user.pinnedItems.edges.map(({ node }) => node);
+
 export const prerender = false;
 ---
 
@@ -18,5 +26,5 @@ export const prerender = false;
     <Link current href="/projects" text="Projects" />
     <Link href="/posts" text="Posts" />
   </Nav>
-  <Projects />
+  <Projects {pinnedItems} />
 </Layout>
