@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Coming soon",
+    "image": "/mountain.jpg",
     "description": "Building new projects...",
     "tags": [],
     "links": {
