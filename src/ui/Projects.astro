@@ -1,24 +1,24 @@
 ---
 import Project from "./Project";
 
-const { pinnedItems } = Astro.props;
+const { projectJSON } = Astro.props;
 ---
 
 <div class="flex flex-wrap justify-center">
   {
-    pinnedItems.map(({ name, id, url, description, languages }) => {
+    projectJSON.map(({ id, title, image, description, tags, links }) => {
       return (
         <Project>
           <img
-            src="/mountain.jpg"
+            src={image}
             alt="Image"
             class="inline w-full rounded md:w-36 md:mr-4"
           />
           <div class="content">
-            <p class="text-xl my-5 leading-5">{name}</p>
+            <p class="text-xl my-5 leading-5">{title}</p>
             <p class="text-sm my-3">{description}</p>
             <div>
-              <a href={url} target="_blank">
+              <a href={links.github} target="_blank">
                 Repo
               </a>
             </div>
