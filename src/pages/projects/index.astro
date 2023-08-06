@@ -3,11 +3,16 @@ import Layout from "../../layouts/Layout.astro";
 import Nav from "../../ui/Nav.astro";
 import Link from "../../ui/Link.astro";
 import Projects from "../../ui/Projects.astro";
+import Button from "../../ui/Button.astro";
 
 // react component
 import ThemeToggle from "../../ui/ThemeToggle";
 
 import projectJSON from "../../fixtures/projects.json";
+
+const uniqueCategories = [
+  ...new Set(projectJSON.map((project) => project.tags).flat()),
+];
 ---
 
 <Layout title="Projects">
@@ -18,5 +23,8 @@ import projectJSON from "../../fixtures/projects.json";
     <Link current href="/projects" text="Projects" />
     <Link href="/posts" text="Posts" />
   </Nav>
+  <div>
+    {uniqueCategories.map((category) => <Button>{category}</Button>)}
+  </div>
   <Projects {projectJSON} />
 </Layout>
