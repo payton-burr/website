@@ -24,7 +24,12 @@ const uniqueCategories = [
     <Link href="/posts" text="Posts" />
   </Nav>
   <div>
-    {uniqueCategories.map((category) => <Button>{category}</Button>)}
+    <Button current href={`/projects`}>All</Button>
+    {
+      uniqueCategories.map((category) => (
+        <Button href={`/projects/tag/${category}`}>{category}</Button>
+      ))
+    }
   </div>
-  <Projects {projectJSON} />
+  <Projects projects={projectJSON} />
 </Layout>
