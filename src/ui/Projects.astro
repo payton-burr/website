@@ -1,12 +1,12 @@
 ---
 import Project from "./Project.astro";
 
-const { projectJSON } = Astro.props;
+const { projects } = Astro.props;
 ---
 
 <div class="flex flex-wrap justify-center">
   {
-    projectJSON.map(({ id, title, image, description, tags, links }) => {
+    projects.map(({ id, title, image, description, tags, links }) => {
       return (
         <Project>
           <img
