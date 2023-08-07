@@ -1,0 +1,57 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../ui/Nav.astro";
+import Link from "../../../ui/Link.astro";
+import Projects from "../../../ui/Projects.astro";
+import Button from "../../../ui/Button.astro";
+
+// react component
+import ThemeToggle from "../../../ui/ThemeToggle";
+
+import projectJSON from "../../../fixtures/projects.json";
+
+const uniqueCategories = [
+  ...new Set(projectJSON.map((project) => project.tags).flat()),
+];
+
+export function getStaticPaths() {
+  const uniqueTags = [
+    ...new Set(projectJSON.map((project) => project.tags).flat()),
+  ];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = projectJSON.filter((project) =>
+      project.tags.includes(tag)
+    );
+
+    return {
+      params: { tag },
+      props: { projects: filteredPosts },
+    };
+  });
+}
+
+const { tag } = Astro.params;
+const { projects } = Astro.props;
+---
+
+<Layout title="Projects">
+  <h1 class="mb-8">Projects</h1>
+  <Nav class="flex items-center justify-end gap-3 mb-8">
+    <ThemeToggle client:only="react" />
+    <Link href="/" text="About" />
+    <Link current href="/projects" text="Projects" />
+    <Link href="/posts" text="Posts" />
+  </Nav>
+  <div>
+    <Button href={`/projects`}>All</Button>
+    {
+      uniqueCategories.map((category) => (
+        <Button current={category === tag} href={`/projects/tag/${category}`}>
+          {category}
+        </Button>
+      ))
+    }
+  </div>
+  <Projects {projects} />
+</Layout>
