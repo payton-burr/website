@@ -4,7 +4,7 @@ const { current, ...rest } = Astro.props;
 
 <a
   {...rest}
-  class=`${current && "border border-slate-300 bg-slate-200/70 dark:bg-zinc-800/100 dark:border-zinc-700"} no-underline font-normal cursor-pointer bg-slate-100 dark:bg-zinc-800/40 py-1 px-2 rounded-sm text-xs md:text-sm mr-1 mt-1`
+  class=`${current ? "pointer-events-none border border-slate-300 bg-slate-200/70 dark:bg-zinc-800/100 dark:border-zinc-700": ""} no-underline font-normal cursor-pointer bg-slate-100 dark:bg-zinc-800/40 py-1 px-2 rounded-sm text-xs md:text-sm mr-1 mt-1`
 >
   <slot />
 </a>
