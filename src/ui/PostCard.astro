@@ -10,7 +10,7 @@ const { frontmatter, url } = Astro.props;
   <h3><Link post text={frontmatter.title} href={url} /></h3>
   <p class="mb-2 text-zinc-400">
     {frontmatter.description}
-    <Link fm text="Read More" href={url} />
+    {" "}<Link fm text="Read More" href={url} />
   </p>
   <time class="text-sm text-zinc-300">{formatDate(frontmatter.date)}</time>
 </article>
