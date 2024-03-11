@@ -8,4 +8,4 @@ share: true
 ---
 # Welcome to my test blog
 
-![[Drawing 2024-03-10 23.43.29.excalidraw|Drawing 2024-03-10 23.43.29.excalidraw]]
+![[./Drawing 2024-03-10 23.43.29.svg|Drawing 2024-03-10 23.43.29.excalidraw]]
