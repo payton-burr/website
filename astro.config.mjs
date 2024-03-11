@@ -10,4 +10,11 @@ export default defineConfig({
     },
   },
   integrations: [tailwind(), react()],
+  vite: {
+    build: {
+      rollupOptions: {
+        external: ["./src/content/blog/*.excalidraw"],
+      },
+    },
+  },
 });
