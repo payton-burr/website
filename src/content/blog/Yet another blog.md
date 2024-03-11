@@ -8,4 +8,4 @@ share: true
 ---
 # Welcome to yet another blog
 
-![Drawing 2024-03-10 23.35.41.excalidraw](Drawing%202024-03-10%2023.35.41.excalidraw.md)
+![[Drawing 2024-03-10 23.35.41.excalidraw|Drawing 2024-03-10 23.35.41.excalidraw]]
