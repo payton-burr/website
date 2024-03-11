@@ -1,7 +1,7 @@
 ---
 title: Yet another blog
 description: This is yet another blog
-date: 2024-3-10
+date: 2024-03-10
 tags:
   - Notes
 share: true
